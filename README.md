@@ -12,7 +12,7 @@ Understanding the use of Chart.js library can go a long way into figuring out ho
 
 ### Output
 
-![codes](images\t-write.PNG)
+![codes](https://imgur.com/6qlxh2P)
 
 After this package is installed in the specified directory file some files will be added into the directory
 
