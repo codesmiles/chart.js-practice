@@ -18,4 +18,12 @@ After this package is installed in the specified directory file some files will 
 
 ![codes](images\Capture.PNG)
 
-- 
+> NOTE It is for the sake of the chart's responsiveness it is advisable to use a canvas tag in the HTML file
+
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+
+- add a script link into the header of our HTML file
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
