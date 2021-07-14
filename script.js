@@ -1,26 +1,55 @@
-var Chart = require('chart.js');
 
-// let myChart = document.getElementById('myChart').getContext("2d");
+let myChart = document.getElementById('myChart').getContext("2d");
 
-// let massPopChart = new Chart(myChart, {
-//     type: bar, //bar, horizontalBar, pie, doughnut, polarArea, line, radar
-//     data{
-//     labels: ['Kano', 'Kaduna', 'Zamfara', 'yobe', 'oyo', 'kogi'],
-//     datasets: [{
-//         label: "Populations",
-//         data: [
-//             500, 800, 200, 100, 900, 700
-//         ],
-//         backgroundColor:green
-//     }]
-// },
-//     options{
+// Global default
 
-//     }
-    
 
-// });
+        let massPopChart = new Chart(myChart, {
+            type: "doughnut", //bar horizontal bar, pie, line, doughnut radar and polar area
+            data: {
+                labels: [`zaria`, `kaduna`, `imo`, `anambra`, `owerri`, `yobe`],
+                datasets: 
+                [{
+                    label: `Population`,
+                    data: [
+                        3,
+                        5,
+                        4,
+                        10,
+                        7
+                    ],
 
+                    backgroundColor:[
+                        `green`,`blue`,`red`,`pink`,`black`
+                    ],
+                    borderWidth:`1`,
+                    boderColor:`grey`,
+
+                }]
+
+            },
+            options:{
+                title:{
+                    display:true,
+                    text:`largest cities in Nigeria`,
+                    fontSize: 25,
+                    fontColor: `black`
+                },
+                legend:{
+                    display:false,
+                    position:`right`
+                }
+            }
+
+        });
+
+
+
+
+
+
+
+/*
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -56,3 +85,5 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+*/
